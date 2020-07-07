@@ -10,7 +10,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { registerLocaleData } from '@angular/common';
 import pt from '@angular/common/locales/pt';
-import { ComponentsModule } from './modules/components/components.module';
+import { DataEntryModule } from './modules/data-entry/data-entry.module';
 
 registerLocaleData(pt);
 
@@ -26,7 +26,7 @@ registerLocaleData(pt);
     FormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    ComponentsModule
+    DataEntryModule
   ],
   providers: [{ provide: NZ_I18N, useValue: pt_BR }],
   bootstrap: [AppComponent]

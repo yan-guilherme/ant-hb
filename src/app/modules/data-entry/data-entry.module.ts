@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { BasicFormPageComponent } from './pages/basic-form-page/basic-form-page.component';
-import { ComponentsRoutingModule } from './components.routes';
+import { DataEntryRoutingModule } from './data-entry.routes';
 import { NzFormModule } from 'ng-zorro-antd/form';
 import { ReactiveFormsModule } from '@angular/forms';
 import { NzInputModule } from 'ng-zorro-antd/input';
@@ -13,7 +13,7 @@ import { NzTypographyModule } from 'ng-zorro-antd/typography';
   declarations: [BasicFormPageComponent],
   imports: [
     CommonModule,
-    ComponentsRoutingModule,
+    DataEntryRoutingModule,
     ReactiveFormsModule,
 
     // ant design
@@ -23,4 +23,4 @@ import { NzTypographyModule } from 'ng-zorro-antd/typography';
     NzTypographyModule
   ]
 })
-export class ComponentsModule { }
+export class DataEntryModule { }
