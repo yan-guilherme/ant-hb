@@ -3,10 +3,10 @@ import { FormGroup, FormBuilder, Validators, FormControl } from '@angular/forms'
 import { NzSizeLDSType } from 'ng-zorro-antd';
 
 @Component({
-  templateUrl: './basic-form-page.component.html',
-  styleUrls: ['./basic-form-page.component.less']
+  templateUrl: './basic-login-page.component.html',
+  styleUrls: ['./basic-login-page.component.less']
 })
-export class BasicFormPageComponent implements OnInit {
+export class BasicLoginPageComponent implements OnInit {
   loginForm: FormGroup;
   size: NzSizeLDSType = 'large';
 
