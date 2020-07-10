@@ -1,0 +1,33 @@
+<div class="layout">
+
+  <form nz-form [formGroup]="loginForm" class="layout" (ngSubmit)="login()" nz-typography>
+
+    <h2>Login</h2>
+
+    <label for="email">Email</label>
+    <nz-form-item>
+      <nz-form-control nzErrorTip="Please input a valid e-mail">
+        <nz-input-group [nzSize]="size">
+          <input id="email" type="email" nz-input placeholder="Insert your e-mail" formControlName="email"/>
+        </nz-input-group>
+      </nz-form-control>
+    </nz-form-item>
+
+    <label for="password">Password</label>
+    <nz-form-item>
+      <nz-form-control nzErrorTip="Please input your password">
+        <nz-input-group [nzSize]="size">
+          <input id="password" type="password" nz-input placeholder="Insert your password" formControlName="password"/>
+        </nz-input-group>
+      </nz-form-control>
+    </nz-form-item>
+
+    <button class="enter" nz-button nzType="primary" [nzSize]="'large'" type="submit">
+      Login
+    </button>
+
+    <a nz-button nzType="link" class="link-recover-password">
+      Forgot your password? Click here
+    </a>
+  </form>
+</div>
